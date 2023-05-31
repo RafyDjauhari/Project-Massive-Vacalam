@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="15dp"
     android:background="@color/Secondary1"
-    tools:context=".Login">
+    tools:context=".Signup">
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -17,23 +17,50 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selamat Datang"
+            android:text="Buat"
             android:textSize="38sp"
             android:textColor="@color/Secondary5"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wisatawan!"
+            android:text="Akun Anda!"
             android:textStyle="bold"
             android:textSize="38sp"
             android:textColor="@color/Primary"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Nama"
+            android:textSize="20sp"
+            android:textColor="@color/Secondary5"/>
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="18dp"
+            android:hint="Masukan nama anda"
+            android:textColorHint="@color/Secondary4"
+            android:drawableRight="@drawable/outline_person_outline_24"
+            android:drawablePadding="18dp"
+            />
+
     </LinearLayout>
     <LinearLayout
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:layout_below="@+id/header"
+        android:layout_below="@+id/username"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
@@ -82,29 +109,20 @@
             />
 
     </LinearLayout>
-    <TextView
-        android:id="@+id/lupaPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_below="@+id/password"
-        android:layout_alignRight="@+id/password"
-        android:text="Lupa password ?"
-        android:textSize="16sp"
-        android:textColor="@color/Primary"/>
     <FrameLayout
         android:id="@+id/masukButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:layout_marginVertical="25dp"
-        android:layout_below="@+id/lupaPassword"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@+id/password"
         android:background="@drawable/button_bg_1">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Masuk"
+            android:text="Daftar"
             android:textSize="18sp"
             android:textColor="@color/Secondary1"/>
     </FrameLayout>
@@ -118,13 +136,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Belum mempunyai akun ?"
+            android:text="Sudah mempunyai akun ?"
             android:textColor="@color/Secondary5"
             android:textSize="16sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Daftar"
+            android:text=" Masuk"
             android:textColor="@color/Primary"
             android:textSize="16sp"/>
 
