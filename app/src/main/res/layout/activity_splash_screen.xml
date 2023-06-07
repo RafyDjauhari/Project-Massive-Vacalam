@@ -28,7 +28,7 @@
         android:fontFamily="@font/rubiksemibold"
         android:textStyle="bold"
         android:layout_below="@+id/logovacalamp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         ></TextView>
 
 </RelativeLayout>

@@ -1,17 +1,20 @@
-package com.example.project_massive_vacalam
+package com.example.project_massive_vacalam.JelajahiFragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.project_massive_vacalam.R
 
-class Beranda : Fragment() {
+class FragmentJelajahi3 : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_beranda, container, false)
+        return inflater.inflate(R.layout.fragment_jelajahi3, container, false)
     }
+
 }
