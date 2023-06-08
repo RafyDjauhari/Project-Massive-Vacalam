@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:id="@+id/bgutama"
+    android:id="@+id/bgutama2"
     tools:context=".EventFragments.Fragment2">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,10 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:overScrollMode="never"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -26,34 +27,36 @@
         app:cardCornerRadius="2dp"
         app:cardBackgroundColor="@color/white">
     <ImageView
-        android:id="@+id/eventteluktabas"
+        android:id="@+id/fotoeventteluktabasf21"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:layout_margin="10dp"
         android:src="@drawable/potoevent"
         android:padding="10dp"
-        />
+        android:importantForAccessibility="no" />
     <TextView
-        android:id="@+id/texttelukabas1"
+        android:id="@+id/texttelukabasf21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubikmedium"
         android:text="Festifal Teluk Stabas"
         android:textColor="@color/white"
         android:textSize="26sp"
-        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
         android:paddingTop="150dp"
+        tools:ignore="HardcodedText,RtlSymmetry"
         />
     <TextView
-        android:id="@+id/texttelukabas2"
+        android:id="@+id/texttelukabasf22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubikmedium"
         android:text="Kab. Pesisir Barat Lampung"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        android:paddingLeft="30dp"
+        android:textSize="18sp"
+        android:paddingStart="30dp"
         android:paddingTop="180dp"
+        tools:ignore="HardcodedText,RtlSymmetry"
         />
     </androidx.cardview.widget.CardView>
 
@@ -65,11 +68,12 @@
         app:cardCornerRadius="2dp"
         app:cardBackgroundColor="@color/white">
     <ImageView
-        android:id="@+id/eventkrakataufestival2"
+        android:id="@+id/fotoeventkrakataufestivalf2"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="16dp"
-        android:src="@drawable/lampungkrakataufestival" />
+        android:src="@drawable/lampungkrakataufestival"
+        android:importantForAccessibility="no" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,8 +81,9 @@
         android:text="Lampung Krakatau Festival"
         android:textColor="@color/white"
         android:textSize="24sp"
-        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
         android:paddingTop="120dp"
+        tools:ignore="HardcodedText,RtlSymmetry"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -86,9 +91,10 @@
         android:fontFamily="@font/rubikmedium"
         android:text="Kab. Pesisir Barat Lampung"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        android:paddingLeft="30dp"
+        android:textSize="18sp"
+        android:paddingStart="30dp"
         android:paddingTop="150dp"
+        tools:ignore="HardcodedText,RtlSymmetry"
         />
     </androidx.cardview.widget.CardView>
 
@@ -99,11 +105,12 @@
                 app:cardCornerRadius="2dp"
                 app:cardBackgroundColor="@color/white">
     <ImageView
-        android:id="@+id/eventkulinerkrakatau"
+        android:id="@+id/fotoeventkulinerkrakatauf21"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="16dp"
-        android:src="@drawable/festivalkulinerkrakatau" />
+        android:src="@drawable/festivalkulinerkrakatau"
+        android:importantForAccessibility="no" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,8 +118,9 @@
         android:text="Lampung Krakatau Festival"
         android:textColor="@color/white"
         android:textSize="24sp"
-        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
         android:paddingTop="120dp"
+        tools:ignore="HardcodedText,RtlSymmetry"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -120,9 +128,10 @@
         android:fontFamily="@font/rubikmedium"
         android:text="Kab. Pesisir Barat Lampung"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        android:paddingLeft="30dp"
+        android:textSize="18sp"
+        android:paddingStart="30dp"
         android:paddingTop="150dp"
+        tools:ignore="HardcodedText,RtlSymmetry"
         />
             </androidx.cardview.widget.CardView>
 
@@ -133,11 +142,12 @@
             app:cardCornerRadius="2dp"
             app:cardBackgroundColor="@color/white">
             <ImageView
-                android:id="@+id/eventfestivalmakanf1"
+                android:id="@+id/fotoeventfestivalsarapanf21"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:padding="16dp"
-                android:src="@drawable/festivalmakanan" />
+                android:src="@drawable/festivalmakanan"
+                android:importantForAccessibility="no" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,8 +155,9 @@
                 android:text="Festival Sarapan Pagi"
                 android:textColor="@color/white"
                 android:textSize="24sp"
-                android:paddingLeft="30dp"
+                android:paddingStart="30dp"
                 android:paddingTop="120dp"
+                tools:ignore="HardcodedText,RtlSymmetry"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -154,9 +165,10 @@
                 android:fontFamily="@font/rubikmedium"
                 android:text="Kab. Pesisir Barat Lampung"
                 android:textColor="@color/white"
-                android:textSize="18dp"
-                android:paddingLeft="30dp"
+                android:textSize="18sp"
+                android:paddingStart="30dp"
                 android:paddingTop="150dp"
+                tools:ignore="HardcodedText,RtlSymmetry"
                 />
         </androidx.cardview.widget.CardView>
 

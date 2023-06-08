@@ -16,4 +16,8 @@ class Fragment1 : Fragment() {
         return inflater.inflate(R.layout.fragment_1, container, false)
     }
 
-}
+
+    }
+
+
+
