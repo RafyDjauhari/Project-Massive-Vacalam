@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Secondary1"
     tools:context=".SplashScreen"
     android:id="@+id/Splashscreen">
 
@@ -22,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="VACATION LAMPUNG"
-        android:textColor="@color/black"
+        android:textColor="@color/Primary"
         android:textAlignment="center"
         android:textSize="30dp"
         android:fontFamily="@font/rubiksemibold"
