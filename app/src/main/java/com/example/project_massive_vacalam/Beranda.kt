@@ -1,5 +1,6 @@
 package com.example.project_massive_vacalam
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -16,11 +17,11 @@ class Beranda : Fragment() {
     private lateinit var recyclerViewContainer1: LinearLayout
     private lateinit var recyclerViewContainer2: LinearLayout
     private lateinit var recyclerViewContainer3: LinearLayout
-    private lateinit var wisataList1: ArrayList<Wisata>
-    private lateinit var wisataList2: ArrayList<Wisata>
+    private lateinit var wisataList: ArrayList<Wisata>
+    private lateinit var trendingList: ArrayList<Wisata>
     private lateinit var wisataList3: ArrayList<Wisata>
-    private lateinit var wisataAdapter1: WisataAdapter
-    private lateinit var wisataAdapter2: WisataAdapter
+    private lateinit var wisataAdapter: WisataAdapter
+    private lateinit var trendingAdapter: WisataAdapter
     private lateinit var wisataAdapter3: WisataAdapter
 
     override fun onCreateView(
@@ -40,32 +41,43 @@ class Beranda : Fragment() {
         recyclerViewContainer2.orientation = LinearLayout.VERTICAL
         recyclerViewContainer3.orientation = LinearLayout.VERTICAL
 
-        val layoutManager1 = LinearLayoutManager(requireContext())
-        val recyclerView1 = createRecyclerView(layoutManager1)
+        val layoutManager = LinearLayoutManager(requireContext())
+        val recyclerView1 = createRecyclerView(layoutManager)
         recyclerViewContainer1.addView(recyclerView1)
 
-        val layoutManager2 = LinearLayoutManager(requireContext())
-        val recyclerView2 = createRecyclerView(layoutManager2)
+        val recyclerView2 = createRecyclerView(layoutManager)
         recyclerViewContainer2.addView(recyclerView2)
 
-        val layoutManager3 = LinearLayoutManager(requireContext())
-        val recyclerView3 = createRecyclerView(layoutManager3)
+        val recyclerView3 = createRecyclerView(layoutManager)
         recyclerViewContainer3.addView(recyclerView3)
 
-        wisataList1 = ArrayList()
-        addDataToList1()
-        wisataAdapter1 = WisataAdapter(wisataList1)
-        recyclerView1.adapter = wisataAdapter1
+        wisataList = DataSourceWisata().getItemDataList()
+        wisataAdapter = WisataAdapter(wisataList)
+        recyclerView1.adapter = wisataAdapter
 
-        wisataList2 = ArrayList()
-        addDataToList2()
-        wisataAdapter2 = WisataAdapter(wisataList2)
-        recyclerView2.adapter = wisataAdapter2
+        trendingList = DataSourceTrending().getItemDataList()
+        trendingAdapter = WisataAdapter(trendingList)
+        recyclerView2.adapter = trendingAdapter
 
-        wisataList3 = ArrayList()
-        addDataToList3()
+        wisataList3 = DataSourceWisata().getItemDataList()
         wisataAdapter3 = WisataAdapter(wisataList3)
         recyclerView3.adapter = wisataAdapter3
+
+        wisataAdapter.onItemClick = {
+            val intent = Intent(requireContext(), DetailedWisata::class.java)
+            intent.putExtra("wisata", it)
+            startActivity(intent)
+        }
+        trendingAdapter.onItemClick = {
+            val intent = Intent(requireContext(), DetailedWisata::class.java)
+            intent.putExtra("wisata", it)
+            startActivity(intent)
+        }
+        wisataAdapter3.onItemClick = {
+            val intent = Intent(requireContext(), DetailedWisata::class.java)
+            intent.putExtra("wisata", it)
+            startActivity(intent)
+        }
     }
 
     private fun createRecyclerView(layoutManager: RecyclerView.LayoutManager): RecyclerView {
@@ -77,21 +89,4 @@ class Beranda : Fragment() {
         return recyclerView
     }
 
-    private fun addDataToList1() {
-        wisataList1.add(Wisata(R.drawable.bukit_sakura, "Bukit Sakura", "Kec. Jati Agung, Kabupaten Lampung Selatan"))
-        wisataList1.add(Wisata(R.drawable.kebun_karet_trikora, "Kebun Karet Trikora", "Kec. Jati Agung, Kabupaten Lampung Selatan"))
-        wisataList1.add(Wisata(R.drawable.gigi_hiu, "Gigi Hiu", "Kec. Langkapura, Kota Bandar Lampung, Lampung"))
-    }
-
-    private fun addDataToList2() {
-        wisataList2.add(Wisata(R.drawable.gigi_hiu, "Gigi Hiu", "Kec. Langkapura, Kota Bandar Lampung, Lampung"))
-        wisataList2.add(Wisata(R.drawable.kebun_karet_trikora, "Kebun Karet Trikora", "Kec. Jati Agung, Kabupaten Lampung Selatan"))
-        wisataList2.add(Wisata(R.drawable.bukit_sakura, "Bukit Sakura", "Kec. Jati Agung, Kabupaten Lampung Selatan"))
-    }
-
-    private fun addDataToList3() {
-        wisataList3.add(Wisata(R.drawable.gigi_hiu, "Gigi Hiu", "Kec. Langkapura, Kota Bandar Lampung, Lampung"))
-        wisataList3.add(Wisata(R.drawable.kebun_karet_trikora, "Kebun Karet Trikora", "Kec. Jati Agung, Kabupaten Lampung Selatan"))
-        wisataList3.add(Wisata(R.drawable.bukit_sakura, "Bukit Sakura", "Kec. Jati Agung, Kabupaten Lampung Selatan"))
-    }
 }

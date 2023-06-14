@@ -38,7 +38,7 @@
                 android:fontFamily="@font/rubikmedium"
                 android:text="Campus Game"
                 android:textColor="@color/Primary"
-                android:textSize="26sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/userEmail"
@@ -48,7 +48,7 @@
                 android:fontFamily="@font/rubikregular"
                 android:text="campusgame@gmail.com"
                 android:textColor="@color/Secondary4"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
 
         </LinearLayout>

@@ -45,7 +45,7 @@
                         android:fontFamily="@font/rubikmedium"
                         android:text="Jelajahi wisata di Lampung"
                         android:textColor="@color/Secondary1"
-                        android:textSize="26sp"
+                        android:textSize="20sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.905"
@@ -59,12 +59,13 @@
                         android:fontFamily="@font/rubikregular"
                         android:text="pesan tiket wisata sekarang juga!"
                         android:textColor="@color/Secondary1"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.952"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.421" />
 
                     <FrameLayout
                         android:id="@+id/buttonPesan"
@@ -77,7 +78,7 @@
                         app:layout_constraintHorizontal_bias="0.725"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.85">
+                        app:layout_constraintVertical_bias="0.71">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -86,7 +87,7 @@
                             android:fontFamily="@font/rubikregular"
                             android:text="Pesan Tiket"
                             android:textColor="@color/Primary"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
                     </FrameLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -108,7 +109,7 @@
                             android:layout_weight="2"
                             android:text="Jelajahi"
                             android:fontFamily="@font/rubikmedium"
-                            android:textSize="26sp"
+                            android:textSize="20sp"
                             android:textColor="@color/Secondary5"/>
                         <TextView
                             android:id="@+id/jelajahiButton"
@@ -117,7 +118,7 @@
                             android:layout_marginTop="25dp"
                             android:text="Lihat Semua"
                             android:fontFamily="@font/rubikregular"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textColor="@color/Secondary4"/>
                     </LinearLayout>
 
@@ -144,7 +145,7 @@
                             android:layout_weight="2"
                             android:text="Trending"
                             android:fontFamily="@font/rubikmedium"
-                            android:textSize="26sp"
+                            android:textSize="20sp"
                             android:textColor="@color/Secondary5"/>
                         <TextView
                             android:id="@+id/TrendingButton"
@@ -153,7 +154,7 @@
                             android:layout_marginTop="25dp"
                             android:text="Lihat Semua"
                             android:fontFamily="@font/rubikregular"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textColor="@color/Secondary4"/>
                     </LinearLayout>
                     <androidx.recyclerview.widget.RecyclerView
@@ -179,7 +180,7 @@
                             android:layout_weight="2"
                             android:text="Event"
                             android:fontFamily="@font/rubikmedium"
-                            android:textSize="26sp"
+                            android:textSize="20sp"
                             android:textColor="@color/Secondary5"/>
                         <TextView
                             android:id="@+id/eventButton"
@@ -188,7 +189,7 @@
                             android:layout_marginTop="25dp"
                             android:text="Lihat Semua"
                             android:fontFamily="@font/rubikregular"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textColor="@color/Secondary4"/>
                     </LinearLayout>
                     <androidx.recyclerview.widget.RecyclerView

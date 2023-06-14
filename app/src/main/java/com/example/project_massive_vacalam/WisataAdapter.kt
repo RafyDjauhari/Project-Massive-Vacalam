@@ -10,6 +10,8 @@ import org.w3c.dom.Text
 
 class WisataAdapter(private val wisataList: List<Wisata>) : RecyclerView.Adapter<WisataAdapter.WisataViewHolder>() {
 
+    var onItemClick : ((Wisata) -> Unit)? = null
+
     class WisataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val gambarWisataIv : ImageView = itemView.findViewById(R.id.gambarWisata)
         val namaWisataTv : TextView = itemView.findViewById(R.id.namaWisata)
@@ -26,6 +28,10 @@ class WisataAdapter(private val wisataList: List<Wisata>) : RecyclerView.Adapter
         holder.gambarWisataIv.setBackgroundResource(wisata.gambarWisata)
         holder.namaWisataTv.text = wisata.namaWisata
         holder.alamatWisataTv.text = wisata.alamatWisata
+
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(wisata)
+        }
     }
 
     override fun getItemCount(): Int {
