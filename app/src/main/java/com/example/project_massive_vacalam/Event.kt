@@ -3,45 +3,61 @@ package com.example.project_massive_vacalam
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
+import android.view.View
+import android.widget.FrameLayout
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.SnapHelper
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class Event : AppCompatActivity() {
-    private lateinit var tabLayout : TabLayout
-    private lateinit var viewPager2: ViewPager2
-    private lateinit var adapter: EventAdapter
+
+    private lateinit var recyclerViewEvent: FrameLayout
+    private lateinit var eventList: ArrayList<Wisata>
+    private lateinit var eventAdapter: DetailedWisataAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_event)
-        viewPager2 = findViewById(R.id.viewPager)
-        tabLayout = findViewById(R.id.tabLayout)
-        adapter = EventAdapter(supportFragmentManager, lifecycle)
-        viewPager2.adapter = adapter
+        init()
+    }
 
-        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
-            when (position) {
-                0 -> {
-                    tab.text = "Sedang berlangsung"
-                }
-                1 -> {
-                    tab.text = "Yang akan datang"
-                }
-            }
-        }.attach()
+    private fun init() {
+        recyclerViewEvent = findViewById(R.id.recyclerViewEvent)
 
-        for (i in 0..3){
-            val textView = LayoutInflater.from(this).inflate(R.layout.tab_title, null)
-                    as TextView
-            when (i) {
-                0 -> textView.text = "Sedang berlangsung"
-                1 -> textView.text = "Yang akan datang"
-            }
-            tabLayout.getTabAt(i)?.customView = textView
+        val layoutManager = LinearLayoutManager(this)
+        val recyclerView = createRecyclerView(layoutManager)
+        recyclerViewEvent.addView(recyclerView)
+
+        eventList = DataSourceWisata().getItemDataList()
+        eventAdapter = DetailedWisataAdapter(eventList)
+        recyclerView.adapter = eventAdapter
+
+
+        val backButton = findViewById<ImageView>(R.id.backButton)
+        backButton.setOnClickListener {
+            onBackPressed()
         }
 
+        return Unit
+    }
+
+
+    private fun createRecyclerView(layoutManager: RecyclerView.LayoutManager): RecyclerView {
+        val recyclerView = RecyclerView(this)
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        val snapHelper : SnapHelper = LinearSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView)
+        return recyclerView
     }
 }

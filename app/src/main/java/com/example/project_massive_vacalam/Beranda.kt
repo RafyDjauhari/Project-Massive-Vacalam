@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
@@ -78,6 +79,27 @@ class Beranda : Fragment() {
             intent.putExtra("wisata", it)
             startActivity(intent)
         }
+
+        val buttonJelajahi = view.findViewById<TextView>(R.id.jelajahiButton)
+        val buttonTrending = view.findViewById<TextView>(R.id.trendingButton)
+        val buttonEvent = view.findViewById<TextView>(R.id.eventButton)
+
+        buttonJelajahi.setOnClickListener {
+            val goToJelajahi = Intent(activity, Jelajahi::class.java)
+            startActivity(goToJelajahi)
+        }
+
+        buttonTrending.setOnClickListener {
+            val goToTrending = Intent(activity, Trending::class.java)
+            startActivity(goToTrending)
+        }
+
+        buttonEvent.setOnClickListener {
+            val goToEvent = Intent(activity, Event::class.java)
+            startActivity(goToEvent)
+        }
+
+        return Unit
     }
 
     private fun createRecyclerView(layoutManager: RecyclerView.LayoutManager): RecyclerView {

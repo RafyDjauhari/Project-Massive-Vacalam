@@ -32,6 +32,10 @@ data class Wisata(
         return 0
     }
 
+    override fun toString(): String {
+        return namaWisata
+    }
+
     companion object CREATOR : Parcelable.Creator<Wisata> {
         override fun createFromParcel(parcel: Parcel): Wisata {
             return Wisata(parcel)
