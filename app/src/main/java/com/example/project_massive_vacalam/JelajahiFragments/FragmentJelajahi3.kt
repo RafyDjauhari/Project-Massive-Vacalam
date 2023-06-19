@@ -1,5 +1,6 @@
 package com.example.project_massive_vacalam.JelajahiFragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,10 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SnapHelper
-import com.example.project_massive_vacalam.DataSourceWisata
-import com.example.project_massive_vacalam.DetailedWisataAdapter
-import com.example.project_massive_vacalam.R
-import com.example.project_massive_vacalam.Wisata
+import com.example.project_massive_vacalam.*
 
 class FragmentJelajahi3 : Fragment() {
 
@@ -41,6 +39,12 @@ class FragmentJelajahi3 : Fragment() {
         wisataList = DataSourceWisata().getItemDataList()
         wisataAdapter = DetailedWisataAdapter(wisataList)
         recyclerView3.adapter = wisataAdapter
+
+        wisataAdapter.onItemClick = {
+            val intent = Intent(requireContext(), DetailedWisata::class.java)
+            intent.putExtra("wisata", it)
+            startActivity(intent)
+        }
 
         return Unit
     }

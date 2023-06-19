@@ -42,6 +42,12 @@ class FragmentJelajahi1 : Fragment() {
         wisataAdapter = DetailedWisataAdapter(wisataList)
         recyclerView1.adapter = wisataAdapter
 
+        wisataAdapter.onItemClick = {
+            val intent = Intent(requireContext(), DetailedWisata::class.java)
+            intent.putExtra("wisata", it)
+            startActivity(intent)
+        }
+
         return Unit
     }
 

@@ -20,10 +20,10 @@ class Beranda : Fragment() {
     private lateinit var recyclerViewContainer3: LinearLayout
     private lateinit var wisataList: ArrayList<Wisata>
     private lateinit var trendingList: ArrayList<Wisata>
-    private lateinit var wisataList3: ArrayList<Wisata>
+    private lateinit var eventList: ArrayList<EventData>
     private lateinit var wisataAdapter: WisataAdapter
     private lateinit var trendingAdapter: WisataAdapter
-    private lateinit var wisataAdapter3: WisataAdapter
+    private lateinit var eventAdapter: EventDataAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,9 +60,9 @@ class Beranda : Fragment() {
         trendingAdapter = WisataAdapter(trendingList)
         recyclerView2.adapter = trendingAdapter
 
-        wisataList3 = DataSourceWisata().getItemDataList()
-        wisataAdapter3 = WisataAdapter(wisataList3)
-        recyclerView3.adapter = wisataAdapter3
+        eventList = DataSourceEvent().getItemDataList()
+        eventAdapter = EventDataAdapter(eventList)
+        recyclerView3.adapter = eventAdapter
 
         wisataAdapter.onItemClick = {
             val intent = Intent(requireContext(), DetailedWisata::class.java)
@@ -74,9 +74,9 @@ class Beranda : Fragment() {
             intent.putExtra("wisata", it)
             startActivity(intent)
         }
-        wisataAdapter3.onItemClick = {
-            val intent = Intent(requireContext(), DetailedWisata::class.java)
-            intent.putExtra("wisata", it)
+        eventAdapter.onItemClick = {
+            val intent = Intent(requireContext(), DetailedEvent::class.java)
+            intent.putExtra("event", it)
             startActivity(intent)
         }
 

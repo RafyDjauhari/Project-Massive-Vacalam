@@ -42,6 +42,12 @@ class FragmentTrending2 : Fragment() {
         trendingAdapter = DetailedWisataAdapter(trendingList)
         recyclerView2.adapter = trendingAdapter
 
+        trendingAdapter.onItemClick = {
+            val intent = Intent(requireContext(), DetailedWisata::class.java)
+            intent.putExtra("wisata", it)
+            startActivity(intent)
+        }
+
         return Unit
     }
 

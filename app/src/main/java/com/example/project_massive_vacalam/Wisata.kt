@@ -9,14 +9,18 @@ data class Wisata(
     val alamatWisata: String,
     val jamBuka: String,
     val deskWisata: String,
-    val hargaTiket: Int) : Parcelable {
+    val hargaTiket: Int,
+    val gallery: List<Int>) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!,
-        parcel.readInt()
+        parcel.readInt(),
+        mutableListOf<Int>().apply {
+            parcel.readList(this, Int::class.java.classLoader)
+        }
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -26,6 +30,7 @@ data class Wisata(
         parcel.writeString(jamBuka)
         parcel.writeString(deskWisata)
         parcel.writeInt(hargaTiket)
+        parcel.writeList(gallery)
     }
 
     override fun describeContents(): Int {

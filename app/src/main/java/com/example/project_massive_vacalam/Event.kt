@@ -1,5 +1,6 @@
 package com.example.project_massive_vacalam
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,8 +23,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 class Event : AppCompatActivity() {
 
     private lateinit var recyclerViewEvent: FrameLayout
-    private lateinit var eventList: ArrayList<Wisata>
-    private lateinit var eventAdapter: DetailedWisataAdapter
+    private lateinit var eventList: ArrayList<EventData>
+    private lateinit var eventAdapter: DetailedEventAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,9 +39,15 @@ class Event : AppCompatActivity() {
         val recyclerView = createRecyclerView(layoutManager)
         recyclerViewEvent.addView(recyclerView)
 
-        eventList = DataSourceWisata().getItemDataList()
-        eventAdapter = DetailedWisataAdapter(eventList)
+        eventList = DataSourceEvent().getItemDataList()
+        eventAdapter = DetailedEventAdapter(eventList)
         recyclerView.adapter = eventAdapter
+
+        eventAdapter.onItemClick = {
+            val intent = Intent(this, DetailedEvent::class.java)
+            intent.putExtra("event", it)
+            startActivity(intent)
+        }
 
 
         val backButton = findViewById<ImageView>(R.id.backButton)

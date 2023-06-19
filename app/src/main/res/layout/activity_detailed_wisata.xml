@@ -7,84 +7,168 @@
     android:background="@color/Secondary1"
     tools:context=".DetailedWisata">
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/Secondary1"
+        android:elevation="4dp"
+        android:title=""
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubiksemibold"
+                android:gravity="center"
+                android:text="Jelajahi"
+                android:textColor="@color/Secondary5"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="80dp">
 
-        <ImageView
-            android:id="@+id/gambarWisata"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@drawable/bukit_sakura"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/namaWisata"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:text="nama wisata"
-            android:fontFamily="@font/rubikmedium"
-            android:textSize="20sp"
-            android:textColor="@color/Secondary5"/>
+            <ImageView
+                android:id="@+id/gambarWisata"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/bukit_sakura"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
             <TextView
+                android:id="@+id/namaWisata"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Buka "
-                android:fontFamily="@font/rubikregular"
-                android:textSize="14sp"
-                android:textColor="@color/Secondary5"/>
-            <TextView
-                android:id="@+id/jamBuka"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="07.00-17.00"
-                android:fontFamily="@font/rubikregular"
-                android:textSize="14sp"
-                android:textColor="@color/Secondary5"/>
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/deskWisata"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="15dp"
-            android:paddingHorizontal="20dp"
-            android:text="Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya."
-            android:fontFamily="@font/rubikregular"
-            android:textSize="12sp"
-            android:textColor="@color/Secondary5"
-            android:justificationMode="inter_word"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp "
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="nama wisata"
                 android:fontFamily="@font/rubikmedium"
-                android:textSize="14sp"
-                android:textColor="@color/Primary"/>
-            <TextView
-                android:id="@+id/hargaTiket"
+                android:textSize="20sp"
+                android:textColor="@color/Secondary5"/>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="50.000.000.000"
-                android:fontFamily="@font/rubikmedium"
-                android:textSize="14sp"
-                android:textColor="@color/Primary"/>
-        </LinearLayout>
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buka "
+                    android:fontFamily="@font/rubikregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/Secondary5"/>
+                <TextView
+                    android:id="@+id/jamBuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07.00-17.00"
+                    android:fontFamily="@font/rubikregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/Secondary5"/>
+            </LinearLayout>
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/deskWisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:text="Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya."
+                android:fontFamily="@font/rubikregular"
+                android:textSize="12sp"
+                android:textColor="@color/Secondary5"
+                android:justificationMode="inter_word"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp "
+                    android:fontFamily="@font/rubikmedium"
+                    android:textSize="14sp"
+                    android:textColor="@color/Primary"/>
+                <TextView
+                    android:id="@+id/hargaTiket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50.000.000.000"
+                    android:fontFamily="@font/rubikmedium"
+                    android:textSize="14sp"
+                    android:textColor="@color/Primary"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/btnPesanTiket"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg_1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubikregular"
+                    android:textSize="16sp"
+                    android:textColor="@color/Secondary1"
+                    android:text="Pesan Tiket"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:text="Pemandangan"
+                android:fontFamily="@font/rubikmedium"
+                android:textSize="20sp"
+                android:textColor="@color/Secondary5"/>
+
+            <com.example.project_massive_vacalam.NonScrollableGridView
+                android:id="@+id/galleryGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:horizontalSpacing="8dp"
+                android:numColumns="2"
+                android:verticalSpacing="8dp"  />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
