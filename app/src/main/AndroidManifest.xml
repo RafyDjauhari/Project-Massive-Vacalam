@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Project_Massive_Vacalam"
         tools:targetApi="31">
         <activity
+            android:name=".DetailedTrending"
+            android:exported="false" />
+        <activity
             android:name=".DetailedEvent"
             android:exported="false" />
         <activity
@@ -53,6 +56,21 @@
         <activity
             android:name=".SplashScreen"
             android:exported="false" />
+        <activity
+            android:name=".Bahasa"
+            android:exported="false"/>
+        <activity
+            android:name=".Bantuan"
+            android:exported="false"/>
+        <activity
+            android:name=".TentangAplikasi"
+            android:exported="false"/>
+        <activity
+            android:name=".EditProfil"
+            android:exported="false"/>
     </application>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

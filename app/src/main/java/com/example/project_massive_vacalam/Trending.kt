@@ -3,6 +3,7 @@ package com.example.project_massive_vacalam
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
@@ -20,6 +21,11 @@ class Trending : AppCompatActivity() {
         tabLayout = findViewById(R.id.tabLayout)
         adapter = TrendingAdapter(supportFragmentManager, lifecycle)
         viewPager2.adapter = adapter
+
+        val backButton = findViewById<ImageView>(R.id.backButton)
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
 
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             when (position) {

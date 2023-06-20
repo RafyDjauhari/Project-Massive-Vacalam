@@ -70,7 +70,7 @@ class Beranda : Fragment() {
             startActivity(intent)
         }
         trendingAdapter.onItemClick = {
-            val intent = Intent(requireContext(), DetailedWisata::class.java)
+            val intent = Intent(requireContext(), DetailedTrending::class.java)
             intent.putExtra("wisata", it)
             startActivity(intent)
         }

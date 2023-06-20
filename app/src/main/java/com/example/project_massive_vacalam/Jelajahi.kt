@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.widget.SearchView
 import android.widget.TextView
@@ -23,6 +24,11 @@ class Jelajahi : AppCompatActivity() {
         tabLayout = findViewById(R.id.tabLayout)
         adapter = JelajahiAdapter(supportFragmentManager, lifecycle)
         viewPager2.adapter = adapter
+
+        val backButton = findViewById<ImageView>(R.id.backButton)
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
 
         val searchButton = findViewById<LinearLayout>(R.id.searchView)
 
