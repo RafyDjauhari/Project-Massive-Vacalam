@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,65 +13,55 @@
         android:theme="@style/Theme.Project_Massive_Vacalam"
         tools:targetApi="31">
         <activity
-            android:name=".DetailedTrending"
-            android:exported="false" />
-        <activity
-            android:name=".DetailedEvent"
-            android:exported="false" />
-        <activity
-            android:name=".Search"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".DetailedWisata"
-            android:exported="false" />
-        <activity
-            android:name=".Jelajahi"
-            android:exported="false" />
-        <activity
-            android:name=".Trending"
-            android:exported="false" />
-        <activity
-            android:name=".Event"
-            android:exported="false" />
-        <activity
-            android:name=".Signup"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".SplashScreen"
-            android:exported="false" />
-        <activity
-            android:name=".Bahasa"
-            android:exported="false"/>
+            android:name=".TentangAplikasi"
+            android:exported="false"></activity>
         <activity
             android:name=".Bantuan"
-            android:exported="false"/>
+            android:exported="false"></activity>
         <activity
-            android:name=".TentangAplikasi"
-            android:exported="false"/>
+            android:name=".Bahasa"
+            android:exported="false"></activity>
         <activity
             android:name=".EditProfil"
-            android:exported="false"/>
+            android:exported="false"></activity>
+        <activity
+            android:name=".DetailedWisata"
+            android:exported="false"></activity>
+        <activity
+            android:name=".DetailedTrending"
+            android:exported="false"></activity>
+        <activity
+            android:name=".DetailedEvent"
+            android:exported="false"></activity>
+        <activity android:name=".Search"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Jelajahi"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Trending"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Event"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Signup"
+            android:exported="false"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Login"
+            android:exported="false"></activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

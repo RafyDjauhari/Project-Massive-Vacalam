@@ -127,7 +127,7 @@
             android:textColor="@color/Secondary1"/>
     </FrameLayout>
     <LinearLayout
-        android:id="@+id/daftarSekarang"
+        android:id="@+id/masukSekarang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -154,7 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/daftarSekarang"
+        android:layout_below="@+id/masukSekarang"
         android:text="Lewati"
         android:textColor="@color/Primary"
         android:textSize="16sp"/>

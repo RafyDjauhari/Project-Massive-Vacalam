@@ -55,8 +55,6 @@ class FragmentJelajahi1 : Fragment() {
         val recyclerView = RecyclerView(requireContext())
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
-        val snapHelper : SnapHelper = LinearSnapHelper()
-        snapHelper.attachToRecyclerView(recyclerView)
         return recyclerView
     }
 

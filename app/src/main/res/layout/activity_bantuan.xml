@@ -7,10 +7,10 @@
     android:background="@color/Secondary1"
     tools:context=".Bantuan">
     <LinearLayout
-        android:id="@+id/btn_back_bantuan"
         android:layout_width="match_parent"
         android:layout_height="45dp">
         <ImageButton
+            android:id="@+id/btn_back_bantuan"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="15dp"
@@ -46,15 +46,12 @@
         </TextView>
         <FrameLayout
             android:id="@+id/bantuan_kuliner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bantuan"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="25dp">
-            <ImageButton
-                android:layout_width="155dp"
-                android:layout_height="40dp"
-                android:src="@drawable/bg_bantuan">
-            </ImageButton>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,21 +59,17 @@
                 android:text="Kuliner"
                 android:fontFamily="@font/rubikmedium"
                 android:textColor="@color/Secondary5"
-                android:textSize="14sp">
-            </TextView>
+                android:textSize="14sp" />
+
         </FrameLayout>
         <FrameLayout
             android:id="@+id/bantuan_pesan_tiket"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
             android:layout_marginTop="40dp"
+            android:background="@drawable/bg_bantuan"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="100dp">
-            <ImageButton
-                android:layout_width="155dp"
-                android:layout_height="40dp"
-                android:src="@drawable/bg_bantuan">
-            </ImageButton>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,15 +82,11 @@
         </FrameLayout>
         <FrameLayout
             android:id="@+id/bantuan_cari_wisata"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bantuan"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="25dp">
-            <ImageButton
-                android:layout_width="155dp"
-                android:layout_height="40dp"
-                android:src="@drawable/bg_bantuan">
-            </ImageButton>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,16 +99,12 @@
         </FrameLayout>
         <FrameLayout
             android:id="@+id/bantuan_pembayaran"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_bantuan"
             android:layout_marginTop="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="100dp">
-            <ImageButton
-                android:layout_width="155dp"
-                android:layout_height="40dp"
-                android:src="@drawable/bg_bantuan">
-            </ImageButton>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -142,7 +127,6 @@
         android:textColor="@color/Secondary5">
     </TextView>
     <LinearLayout
-        android:id="@+id/bantuan_kata_sandi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="260dp">
@@ -154,6 +138,7 @@
             android:src="@drawable/icon_pertanyaaan_lain">
         </ImageButton>
         <TextView
+            android:id="@+id/bantuan_kata_sandi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -164,7 +149,6 @@
         </TextView>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/bantuan_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="290dp">
@@ -176,6 +160,7 @@
             android:src="@drawable/icon_pertanyaaan_lain">
         </ImageButton>
         <TextView
+            android:id="@+id/bantuan_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

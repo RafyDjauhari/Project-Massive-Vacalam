@@ -11,6 +11,7 @@
         android:layout_height="45dp">
 
         <ImageButton
+            android:id="@+id/back_tentang_aplikasi"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="15dp"
@@ -18,7 +19,7 @@
             android:background="@color/Secondary1"
             android:contentDescription="Back button"
             android:src="@drawable/back_icon"
-            tools:ignore="TouchTargetSizeCheck"></ImageButton>
+            tools:ignore="TouchTargetSizeCheck"/>
     </LinearLayout>
 
     <LinearLayout
