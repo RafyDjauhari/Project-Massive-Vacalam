@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,46 +14,50 @@
         android:theme="@style/Theme.Project_Massive_Vacalam"
         tools:targetApi="31">
         <activity
+            android:name=".PesanTiket"
+            android:exported="false" />
+        <activity
             android:name=".TentangAplikasi"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Bantuan"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Bahasa"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".EditProfil"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".DetailedWisata"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".DetailedTrending"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".DetailedEvent"
-            android:exported="false"></activity>
-        <activity android:name=".Search"
-            android:exported="true"></activity>
+            android:exported="false" />
+        <activity
+            android:name=".Search"
+            android:exported="true" />
         <activity
             android:name=".Jelajahi"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Trending"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Event"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Signup"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

@@ -1,7 +1,9 @@
 package com.example.project_massive_vacalam
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.FrameLayout
 import android.widget.GridView
 import android.widget.ImageView
 import android.widget.ListView
@@ -38,6 +40,13 @@ class DetailedWisata : AppCompatActivity() {
             val backButton = findViewById<ImageView>(R.id.backButton)
             backButton.setOnClickListener {
                 onBackPressed()
+            }
+
+            val btnPesanTiket = findViewById<FrameLayout>(R.id.btnPesanTiket)
+
+            btnPesanTiket.setOnClickListener {
+                val intent = Intent(this, PesanTiket::class.java)
+                startActivity(intent)
             }
         }
 
