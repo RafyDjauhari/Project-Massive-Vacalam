@@ -5,16 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.project_massive_vacalam.SharedPreferencesUtils.saveTokenToPreferences
-import com.example.project_massive_vacalam.SharedPreferencesUtils.saveUserIdToPreferences
 import com.example.project_massive_vacalam.databinding.ActivityLoginBinding
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import okhttp3.MultipartBody
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.logging.HttpLoggingInterceptor
+import okhttp3.Callback
+import java.io.IOException
+
 
 class Login : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var apiService: ApiService
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,48 +25,7 @@ class Login : AppCompatActivity() {
         binding.masukButton.setOnClickListener {
             val email = binding.emailET.text.toString()
             val password = binding.passwordET.text.toString()
-
-            val loginRequest = LoginRequest(email, password)
-
-            ServiceGenerator.instanceRetrofit.login(email, password).enqueue(object : Callback<LoginResponse> {
-                override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
-                    if (response.isSuccessful) {
-                        val loginResponse = response.body()
-                        // Login successful, handle the response here
-
-                        val token = loginResponse?.token
-                        val userId = loginResponse?.id_user
-
-                        // Save the token and userId to shared preferences
-                        saveTokenToPreferences(this@Login, token)
-                        saveUserIdToPreferences(this@Login, userId.toString())
-
-                        // Redirect to the main activity or perform other desired actions
-                        startActivity(Intent(this@Login, MainActivity::class.java))
-                        finish()
-
-                        // Show a success message to the user
-                        Toast.makeText(this@Login, "Login Successful", Toast.LENGTH_SHORT).show()
-                    } else {
-                        // Login failed, handle the error response here
-
-                        val errorMessage = response.errorBody()?.string()
-
-                        // Show an error message to the user
-                        Log.e("LoginActivity", "Login Failed: $errorMessage")
-                        Toast.makeText(this@Login, "Login Failed: $errorMessage", Toast.LENGTH_SHORT).show()
-                    }
-                }
-
-
-
-                override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                    // Handle network or API call failures here
-                    Toast.makeText(this@Login, "Login Failed: ${t.message}", Toast.LENGTH_SHORT).show()
-                    t.printStackTrace()
-                }
-
-            })
+            loginUsingApi(email, password)
         }
 
 
@@ -76,4 +36,51 @@ class Login : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }
     }
+
+    private fun loginUsingApi(email: String, password: String) {
+        val client = OkHttpClient.Builder()
+            .addInterceptor(HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BODY })
+            .build()
+
+        val requestBody = MultipartBody.Builder()
+            .setType(MultipartBody.FORM)
+            .addFormDataPart("email", email)
+            .addFormDataPart("password", password)
+            .build()
+
+        val request = Request.Builder()
+            .url("https://massive-lumen.000webhostapp.com/auth/login")
+            .header("Content-Type", "multipart/form-data")
+            .post(requestBody)
+            .build()
+
+        client.newCall(request).enqueue(object : Callback {
+            override fun onResponse(call: okhttp3.Call, response: okhttp3.Response) {
+                if (response.isSuccessful){
+                    val responseBody = response.body?.string()
+                    Log.d("Login", "Response: $responseBody")
+                    // Handle the response here
+                    runOnUiThread {
+                        Toast.makeText(applicationContext, "Login success", Toast.LENGTH_SHORT).show()
+                    }
+                    startActivity(Intent(this@Login, MainActivity::class.java))
+                    finish()
+                } else {
+                    runOnUiThread {
+                        Toast.makeText(applicationContext, "Login failed", Toast.LENGTH_SHORT).show()
+                    }
+
+                }
+            }
+
+            override fun onFailure(call: okhttp3.Call, e: IOException) {
+                e.printStackTrace()
+                // Handle the failure here
+            }
+        })
+
+
+
+    }
+
 }
