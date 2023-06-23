@@ -406,17 +406,18 @@
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="45dp"
                     android:layout_height="30dp"
-                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
                     android:src="@drawable/baseline_account_balance_wallet_24"/>
+
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pilih Metode"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80dp"
                     android:fontFamily="@font/rubikmedium"
-                    android:textSize="18sp"
-                    android:textColor="@color/Primary"/>
+                    android:text="Pilih Metode pembayaran"
+                    android:textColor="@color/Primary"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
