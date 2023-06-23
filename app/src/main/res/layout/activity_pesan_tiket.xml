@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hari Kunjungan"
+                android:text="Tanggal Kunjungan"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/rubikmedium"
                 android:textSize="18sp"
@@ -117,7 +117,7 @@
                         android:id="@+id/hariKunjungan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Pilih hari kunjungan"
+                        android:hint="Pilih tanggal kunjungan"
                         android:inputType="none"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -132,28 +132,30 @@
                 android:fontFamily="@font/rubikmedium"
                 android:textSize="18sp"
                 android:textColor="@color/Primary"/>
-            <LinearLayout
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/frame_pilih_tiket"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@drawable/frame_pilih_tiket">
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="45dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_ticket"/>
-                <LinearLayout
-                    android:id="@+id/userPilihTiket"
-                    android:layout_width="0dp"
+                <RelativeLayout
+                    android:id="@+id/userAnakPilihTiket"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:orientation="vertical">
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ticket" />
 
                     <TextView
                         android:id="@+id/namePilihTiket"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
                         android:layout_marginTop="7dp"
                         android:fontFamily="@font/rubikregular"
                         android:text="Anak-anak"
@@ -164,14 +166,116 @@
                         android:id="@+id/hargaPilihTiket"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="25dp"
                         android:fontFamily="@font/rubikregular"
                         android:text="Rp.."
                         android:textColor="@color/Primary"
                         android:textSize="18sp" />
 
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="280dp"
+                        android:orientation="horizontal">
 
-            </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/button_tambah_anak"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/Primary"
+                            android:onClick="kurangAnak"
+                            android:src="@drawable/ic_kurang_jumlah_tiket" />
+
+                        <TextView
+                            android:id="@+id/text_anak"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/Secondary6"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@+id/button_kurang_anak"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/Primary"
+                            android:onClick="tambahAnak"
+                            android:src="@drawable/ic_tambah_jumlah_tiket" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userAnakPilihTiket">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ticket" />
+
+                    <TextView
+                        android:id="@+id/nameDewasaPilihTiket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Dewasa"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/hargaDewasaPilihTiket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Rp.."
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="280dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/button_kurang_dewasa"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/Primary"
+                            android:onClick="kurangDewasa"
+                            android:src="@drawable/ic_kurang_jumlah_tiket" />
+
+                        <TextView
+                            android:id="@+id/text_dewasa"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/Secondary6"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@+id/button_tambah_dewasa"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/Primary"
+                            android:onClick="tambahDewasa"
+                            android:src="@drawable/ic_tambah_jumlah_tiket" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -182,42 +286,116 @@
                 android:textColor="@color/Primary"
                 android:textSize="18sp" />
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/frame_pilih_tiket"
                 android:layout_marginTop="8dp">
-                <TextView
-                    android:id="@+id/nameRincianPembayaran"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="7dp"
-                    android:fontFamily="@font/rubikregular"
-                    android:text="Anak-anak"
-                    android:textColor="@color/Primary"
-                    android:textSize="18sp" />
-                <TextView
-                    android:id="@+id/ketJumlah"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginHorizontal="60dp"
-                    android:fontFamily="@font/rubikregular"
-                    android:text="( 1 )"
-                    android:textColor="@color/Primary"
-                    android:textSize="18sp" />
-                <TextView
-                    android:id="@+id/ketJumlahPembayaran"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:fontFamily="@font/rubikregular"
-                    android:text="Rp. 100.000"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/Primary"
-                    android:textSize="18sp" />
 
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/anakRincianPembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/rincian_pembayaran_anak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Anak-anak"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/ketJumlahAnak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginHorizontal="60dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="( 1 )"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/ketJumlahPembayaranAnak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Rp. 100.000"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dewasaRincianPembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/anakRincianPembayaran">
+                    <TextView
+                        android:id="@+id/rincian_pembayaran_dewasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Dewasa"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/ketJumlahDewasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginHorizontal="85dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="( 1 )"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/ketJumlahPembayaranDewasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Rp. 100.000"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dewasaRincianPembayaran">
+                    <TextView
+                        android:id="@+id/TvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Total"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/ketJumlahTiket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginHorizontal="110dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="( 1 )"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/totalPembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/rubikregular"
+                        android:text="Rp. 100.000"
+                        android:textColor="@color/Primary"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
 
             <LinearLayout
                 android:id="@+id/btnPembayaran"

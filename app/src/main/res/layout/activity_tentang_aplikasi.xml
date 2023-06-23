@@ -35,7 +35,8 @@
             android:fontFamily="@font/rubiksemibold"
             android:text="VACALAM"
             android:textColor="@color/Secondary6"
-            android:textSize="32sp"></TextView>
+            android:textSize="32sp">
+        </TextView>
 
         <TextView
             android:layout_width="wrap_content"

@@ -34,6 +34,7 @@ class EditProfil : AppCompatActivity() {
     private lateinit var passwordEditTextKonfirmasi: EditText
     private lateinit var saveButton: LinearLayout
     private lateinit var showHideImageView: ImageView
+    private lateinit var backEditProfil : ImageView
 
     private var isPasswordVisible = false
 
@@ -62,7 +63,14 @@ class EditProfil : AppCompatActivity() {
         selectImageButton.setOnClickListener {
             openGallery()
         }
+
+        val backEditProfil = findViewById<ImageButton>(R.id.back_edit_profile)
+        backEditProfil.setOnClickListener {
+            onBackPressed()
+        }
     }
+
+
     private fun togglePasswordVisibility() {
         if (isPasswordVisible) {
             // Hide password
@@ -78,8 +86,13 @@ class EditProfil : AppCompatActivity() {
         isPasswordVisible = !isPasswordVisible
 
         // Set the cursor position to the end of the text
+        passwordEditText.transformationMethod?.apply {
+            passwordEditText.transformationMethod = this
+        }
         passwordEditText.setSelection(passwordEditText.text.length)
+
     }
+
 
     private fun saveProfileChanges() {
         val name = usernameEditText.text.toString()

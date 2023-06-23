@@ -25,12 +25,14 @@ class Profil : Fragment() {
     private lateinit var btnBahasa : LinearLayout
 
     private lateinit var notificationToggle: ToggleButton
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profil, container, false)
+
         buttonEdit = view.findViewById(R.id.buttonedit)
         btnTentang = view.findViewById(R.id.btn_tentang)
         btnBantuan = view.findViewById(R.id.btn_bantuan)
