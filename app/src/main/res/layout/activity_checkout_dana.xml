@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/frameDana"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#108EE9">
+        <ImageView
+            android:id="@+id/btnBackDana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/textDana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yuk Bayar !"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/rubikmedium"
+            android:textSize="30dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/frameDana"
+        android:layout_marginBottom="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/frameTotalPemb"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/frameDana"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Total Pembayaran"
+                android:textColor="#272727"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubikmedium"
+                android:text="Rp. 26.000"
+                android:textColor="#272727"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/framePemesanan"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/frameTotalPemb"
+            android:background="#F4F5F7"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textPemesananDana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/rubiksemibold"
+                    android:text="Rincian Pemesanan"
+                    android:textColor="#474545"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="14dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text="Anak-Anak"
+                    android:textColor="#474545"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="14dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text="Dewasa"
+                    android:textColor="#474545"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text="1"
+                    android:textColor="#474545"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text="3"
+                    android:textColor="#474545"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text="Rp. 5.000"
+                    android:textColor="#474545"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubikmedium"
+                    android:text="Rp. 15.000"
+                    android:textColor="#474545"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ketNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/framePemesanan"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/logo_dana"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/rubikmedium"
+            android:textColor="@color/Secondary5"
+            android:text="Dana"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/ketNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/rubikmedium"
+        android:textColor="@color/Secondary4"
+        android:text="No. Handphone :"/>
+    <LinearLayout
+        android:id="@+id/frameTlpNumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ketNumber"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="60dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/rubikmedium"
+            android:textColor="@color/Secondary5"
+            android:text="0812XXXXXXXX"/>
+        <ImageView
+            android:id="@+id/btnCopy"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="46dp"
+            android:src="@drawable/baseline_content_copy_24"/>
+        <TextView
+            android:id="@+id/textCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/rubikmedium"
+            android:textColor="@color/Secondary4"
+            android:text="Salin"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/teksAnnounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameTlpNumb"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubikregular"
+        android:text="Penting : Pastikan kamu mentransfer ke No. Handphone yang tertera di atas dan sesuai dengan nominal yang tertera."
+        android:textColor="@color/Primary"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/petunjukPemb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ketNumber"
+            android:layout_marginVertical="15dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petunujuk Pembayaran"
+                android:textSize="20sp"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="PETUNJUK PEMBAYARAN MENGGUNAKAN APLIKASI DANA"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/Secondary4"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="1. Buka aplikasi DANA "
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="2. Tap 'Kirim' "
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="3. Tap 'Kirim ke Teman' "
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Masukkan nomor tujuan"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="5. Masukkan nominal yang akan dikirimkan"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. Pilih metode pembayaran menggunakan saldo DANA"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubikregular"
+                    android:text="7. Pastikan nomor dan jumlah transfer sudah sesuai"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. Tap 'Bayar'"
+                    android:fontFamily="@font/rubikregular"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9. Masukkan PIN DANA"
+                    android:fontFamily="@font/rubikregular"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10. Kirim uang berhasil"
+                    android:fontFamily="@font/rubikregular"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="PETUNJUK PEMBAYARAN MENGGUNAKAN APLIKASI MBANKING"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/Secondary4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="1. Login ke m-Banking."
+                android:fontFamily="@font/rubikregular"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="2. Pilih menu E-Wallet"
+                android:fontFamily="@font/rubikregular"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="3. Pilih tujuan transfer yaitu Dana"
+                android:fontFamily="@font/rubikregular"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="4. Masukkan No.Handphone yang tertera diatas"
+                android:fontFamily="@font/rubikregular"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="10dp"
+                android:text="5. Jangan lupa masukkan nominal transfer yang harus dibayar"
+                android:fontFamily="@font/rubikregular"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="6. Masukkan PIN m-Banking."
+                android:fontFamily="@font/rubikregular"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="10dp"
+                android:text="7. Setelah transfer berhasil dilakukan, cek status transfer pada aplikasi M-Banking maupun Dana"
+                android:fontFamily="@font/rubikregular"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnPembayaranDana"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_bg_4"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/prosesPemb"
+            android:layout_marginStart="110dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="13dp"
+                android:textColor="#FFF"
+                android:fontFamily="@font/rubikmedium"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

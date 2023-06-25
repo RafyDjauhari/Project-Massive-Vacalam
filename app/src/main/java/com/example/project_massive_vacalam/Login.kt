@@ -49,7 +49,7 @@ class Login : AppCompatActivity() {
             .build()
 
         val request = Request.Builder()
-            .url("https://massive-lumen.000webhostapp.com/auth/login")
+            .url("https://vacalamp-api.000webhostapp.com/auth/login")
             .header("Content-Type", "multipart/form-data")
             .post(requestBody)
             .build()

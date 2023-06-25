@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHeaderTiketCash"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/Secondary1"
+        android:elevation="4dp"
+        android:title="">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubiksemibold"
+                android:gravity="center"
+                android:text="Tiket Anda"
+                android:textColor="@color/Secondary5"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarHeaderTiketCash"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:id="@+id/frameLogo"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_bg_6"
+        android:layout_below="@id/toolbarHeaderTiketCash"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="100dp"
+            android:src="@drawable/logosplashscreen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frameContent"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:background="@drawable/button_bg_5"
+        android:layout_below="@id/frameLogo"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/gambarPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gigi_hiu" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textGambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Pantai Gigi Hiu"
+            android:shadowColor="@color/black"
+            android:fontFamily="@font/rubikmedium"
+            android:textColor="@color/Primary"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/textsubGambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikregular"
+            android:layout_marginHorizontal="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:text="Kec. Langkapura, Kota Bandar Lampung, Lampung"
+            android:textColor="@color/Secondary5"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameContent"
+        android:text="Detail Pembelian"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginVertical="16dp"
+        android:fontFamily="@font/rubikmedium"
+        android:textSize="18dp"
+        android:textColor="@color/Secondary5"/>
+    <LinearLayout
+        android:id="@+id/frameDetailPemb"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:background="@drawable/button_bg_7"
+        android:layout_below="@id/text1"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/frameSubDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:text="Tiket Masuk"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:id="@+id/textTiketAnak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="14sp"
+                android:text="•     Anak-anak (1-6 th)"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="14sp"
+                android:text="•     Dewasa"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:text="Jumlah Orang"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:text="Status"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:text="Metode Pembayaran"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:text="Total Pembayaran"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frameJumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:id="@+id/jumlahAnak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="14sp"
+                android:text="1"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:id="@+id/jumlahDewasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="14sp"
+                android:text="3"
+                android:fontFamily="@font/rubikregular"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:id="@+id/jumlahOrang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="16sp"
+                android:text=":     4 Orang"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:id="@+id/statusPemb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="16sp"
+                android:text=":     Belum Lunas"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="#EB0D0D"/>
+            <TextView
+                android:id="@+id/metodePemb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="16sp"
+                android:text=":     Cash"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+            <TextView
+                android:id="@+id/totalPemb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="16sp"
+                android:text=":     Rp. 26.000"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="Simpan dan tunjukkan tiket ini di loket Lakukan pembayaran di loket masuk"
+                android:textAlignment="center"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/Secondary5"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:id="@+id/btnUnduh"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg_1"
+                android:orientation="vertical"
+                android:layout_marginTop="26dp"
+
+                android:layout_marginStart="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unduh"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="13dp"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/rubikmedium"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

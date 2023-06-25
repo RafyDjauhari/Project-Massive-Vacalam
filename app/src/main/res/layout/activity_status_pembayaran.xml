@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/frameStatusPemb"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp">
+        <ImageView
+            android:id="@+id/btnBackStatusPemb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/textStatusPemb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Pembayaran"
+            android:textColor="@color/Secondary5"
+            android:fontFamily="@font/rubikmedium"
+            android:textSize="24dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prosesPemb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/frameStatusPemb"
+        android:layout_marginVertical="50dp">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/baseline_access_time_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Pembayaran sedang diproses. Mohon tunggu"
+            android:textSize="25sp"
+            android:fontFamily="@font/rubikmedium"
+            android:textColor="@color/Secondary4"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/btnStatusPemb"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg_4"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/prosesPemb"
+        android:layout_marginStart="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat Pembayaran"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="13dp"
+            android:textColor="#FFF"
+            android:fontFamily="@font/rubikmedium"/>
+
+
+    </LinearLayout>
+    
+</RelativeLayout>
