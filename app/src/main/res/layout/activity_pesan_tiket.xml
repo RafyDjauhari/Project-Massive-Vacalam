@@ -315,14 +315,15 @@
                         android:text="( 1 )"
                         android:textColor="@color/Primary"
                         android:textSize="18sp" />
+
                     <TextView
                         android:id="@+id/ketJumlahPembayaranAnak"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
                         android:layout_marginTop="7dp"
                         android:fontFamily="@font/rubikregular"
-                        android:text="Rp. 100.000"
-                        android:layout_marginLeft="25dp"
+                        android:text="Rp. 50.000"
                         android:textColor="@color/Primary"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -356,16 +357,18 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:fontFamily="@font/rubikregular"
-                        android:text="Rp. 100.000"
+                        android:text="Rp. 50.000"
                         android:textColor="@color/Primary"
                         android:textSize="18sp" />
                 </LinearLayout>
+
                 <LinearLayout
+                    android:id="@+id/dewasaRincianPembayara"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/dewasaRincianPembayaran">
                     <TextView
-                        android:id="@+id/TvTotal"
+                        android:id="@+id/rincian_pembayaran_dewaa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="7dp"
@@ -374,21 +377,21 @@
                         android:textColor="@color/Primary"
                         android:textSize="18sp" />
                     <TextView
-                        android:id="@+id/ketJumlahTiket"
+                        android:id="@+id/ketJumlahDewsa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
-                        android:layout_marginHorizontal="110dp"
+                        android:layout_marginLeft="110dp"
                         android:fontFamily="@font/rubikregular"
                         android:text="( 1 )"
                         android:textColor="@color/Primary"
                         android:textSize="18sp" />
-
                     <TextView
-                        android:id="@+id/totalPembayaran"
+                        android:id="@+id/ketJumlahPembayaraDewasa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
+                        android:layout_marginLeft="84dp"
                         android:fontFamily="@font/rubikregular"
                         android:text="Rp. 100.000"
                         android:textColor="@color/Primary"

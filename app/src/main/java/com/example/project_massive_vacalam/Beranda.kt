@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -79,10 +80,15 @@ class Beranda : Fragment() {
             intent.putExtra("event", it)
             startActivity(intent)
         }
-
+        val buttonPesan = view.findViewById<FrameLayout>(R.id.buttonPesan)
         val buttonJelajahi = view.findViewById<TextView>(R.id.jelajahiButton)
         val buttonTrending = view.findViewById<TextView>(R.id.trendingButton)
         val buttonEvent = view.findViewById<TextView>(R.id.eventButton)
+
+        buttonPesan.setOnClickListener {
+            val goToJelajahi = Intent(activity, Jelajahi::class.java)
+            startActivity(goToJelajahi)
+        }
 
         buttonJelajahi.setOnClickListener {
             val goToJelajahi = Intent(activity, Jelajahi::class.java)

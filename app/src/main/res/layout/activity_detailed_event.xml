@@ -38,7 +38,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/rubiksemibold"
                 android:gravity="center"
-                android:text="Event"
+                android:text="Acara"
                 android:textColor="@color/Secondary5"
                 android:textSize="32sp" />
 

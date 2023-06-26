@@ -230,7 +230,7 @@
                         android:layout_marginStart="130dp"
                         android:layout_marginEnd="16dp"
                         android:textSize="14sp"
-                        android:text="3"
+                        android:text="1"
                         android:fontFamily="@font/rubikregular"
                         android:textColor="@color/Secondary5"/>
                     <TextView
@@ -240,7 +240,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="45dp"
                         android:textSize="16sp"
-                        android:text=":     4 Orang"
+                        android:text=":     2 Orang"
                         android:fontFamily="@font/rubikmedium"
                         android:textColor="@color/Secondary5"/>
                     <TextView
@@ -260,7 +260,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginLeft="45dp"
                         android:textSize="16sp"
-                        android:text=":     Cash"
+                        android:text=":     Dana"
                         android:fontFamily="@font/rubikmedium"
                         android:textColor="@color/Secondary5"/>
                     <TextView
@@ -270,7 +270,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginLeft="45dp"
                         android:textSize="16sp"
-                        android:text=":     Rp. 26.000"
+                        android:text=":     Rp. 100.000"
                         android:fontFamily="@font/rubikmedium"
                         android:textColor="@color/Secondary5"/>
 
@@ -288,27 +288,7 @@
                 android:fontFamily="@font/rubikmedium"
                 android:textColor="@color/Secondary5"
                 android:textSize="16sp"/>
-            <LinearLayout
-                android:id="@+id/btnUnduh"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:background="@drawable/button_bg_1"
-                android:orientation="vertical"
-                android:layout_marginTop="26dp"
 
-                android:layout_marginStart="30dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Unduh"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:layout_marginTop="13dp"
-                    android:textColor="#FFF"
-                    android:fontFamily="@font/rubikmedium"/>
-
-
-            </LinearLayout>
 
         </LinearLayout>
 

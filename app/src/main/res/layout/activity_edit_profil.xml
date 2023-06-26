@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editProfilePage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Secondary1"
@@ -12,15 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@color/Secondary1">
-        <ImageButton
+        <ImageView
             android:id="@+id/back_edit_profile"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:background="@color/Secondary1"
-            android:src="@drawable/btn_back">
-        </ImageButton>
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_icon"
+            android:layout_gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,6 +43,7 @@
                 android:layout_marginVertical="40dp">
 
                 <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profileImageView"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center"

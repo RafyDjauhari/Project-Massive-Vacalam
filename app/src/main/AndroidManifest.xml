@@ -14,12 +14,20 @@
         android:theme="@style/Theme.Project_Massive_Vacalam"
         tools:targetApi="31">
         <activity
+            android:name=".TiketDana"
+            android:exported="false" />
+        <activity
+            android:name=".TiketCash"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutDana"
+            android:exported="false" />
+        <activity
+            android:name=".CheckOutPesanan"
+            android:exported="false" />
+        <activity
             android:name=".PilihMetodePembayaran"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".PesanTiket"
             android:exported="false" />

@@ -64,10 +64,6 @@ class EditProfil : AppCompatActivity() {
             openGallery()
         }
 
-        val backEditProfil = findViewById<ImageButton>(R.id.back_edit_profile)
-        backEditProfil.setOnClickListener {
-            onBackPressed()
-        }
     }
 
 

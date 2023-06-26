@@ -62,7 +62,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/rubikmedium"
-                android:text="Rp. 26.000"
+                android:text="Rp. 100.000"
                 android:textColor="#272727"
                 android:textSize="22sp" />
         </LinearLayout>
@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/rubikmedium"
-                    android:text="3"
+                    android:text="1"
                     android:textColor="#474545"
                     android:textSize="18sp" />
 
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="65dp"
                     android:fontFamily="@font/rubikmedium"
-                    android:text="Rp. 5.000"
+                    android:text="Rp. 50.000"
                     android:textColor="#474545"
                     android:textSize="18sp" />
 
@@ -161,7 +161,7 @@
                     android:layout_marginStart="65dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/rubikmedium"
-                    android:text="Rp. 15.000"
+                    android:text="Rp. 50.000"
                     android:textColor="#474545"
                     android:textSize="18sp" />
 

@@ -36,7 +36,7 @@
                 android:textSize="32sp"
                 android:textColor="@color/Secondary5"
                 android:gravity="center"
-                android:text="Event"/>
+                android:text="Acara"/>
 
         </LinearLayout>
 

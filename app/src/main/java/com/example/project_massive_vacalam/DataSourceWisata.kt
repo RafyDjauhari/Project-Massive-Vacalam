@@ -12,7 +12,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -27,8 +27,8 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
-                    listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
+                    15000,
+                    listOf(R.drawable.pantai_1_gallery_1, R.drawable.pantai_1_gallery_2, R.drawable.pantai_1_gallery_3, R.drawable.pantai_1_gallery_4,R.drawable.pantai_1_gallery_5),
                     "Pantai"
                 )
             )
@@ -40,7 +40,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -55,7 +55,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -68,7 +68,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -83,7 +83,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -98,7 +98,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -111,7 +111,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -126,7 +126,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
@@ -139,7 +139,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -154,7 +154,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -167,7 +167,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -182,7 +182,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -197,7 +197,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -212,7 +212,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -225,7 +225,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -240,7 +240,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
@@ -253,7 +253,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -268,7 +268,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -281,7 +281,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -296,7 +296,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -311,7 +311,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -326,7 +326,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -339,7 +339,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
@@ -352,7 +352,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -365,7 +365,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -380,7 +380,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -393,7 +393,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
@@ -406,7 +406,7 @@
                     "Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Kuliner"
                 )
@@ -419,7 +419,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -434,7 +434,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
@@ -447,7 +447,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -462,7 +462,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
@@ -475,7 +475,7 @@
                     "Kec. Langkapura, Kota Bandar Lampung, Lampung",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora,
                         R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
@@ -490,7 +490,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
@@ -503,7 +503,7 @@
                     "Kec. Jati Agung, Kabupaten Lampung Selatan",
                     "07.00-17.00",
                     "Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya.",
-                    50000,
+                    15000,
                     listOf(R.drawable.bukit_sakura, R.drawable.gigi_hiu, R.drawable.kebun_karet_trikora),
                     "Pantai"
                 )
