@@ -10,14 +10,13 @@
         android:id="@+id/btn_back_bantuan"
         android:layout_width="match_parent"
         android:layout_height="45dp">
-        <ImageButton
+        <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:background="@color/Secondary1"
-            android:src="@drawable/btn_back">
-        </ImageButton>
+            android:src="@drawable/btn_back"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

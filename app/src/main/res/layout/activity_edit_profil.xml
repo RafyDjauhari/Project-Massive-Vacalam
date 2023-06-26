@@ -10,8 +10,10 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:paddingHorizontal="20dp"
         android:background="@color/Secondary1">
         <ImageView
             android:id="@+id/back_edit_profile"
@@ -23,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
             android:text="Ubah Profil"
             android:fontFamily="@font/rubikmedium"
             android:textColor="@color/Secondary5"
@@ -38,9 +40,10 @@
             android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fotoProfile"
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="40dp">
+                android:layout_marginTop="60dp">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/profileImageView"
@@ -76,7 +79,7 @@
                 android:id="@+id/ubah_profil"
                 android:layout_width="384dp"
                 android:layout_height="370dp"
-                android:layout_marginTop="200dp"
+                android:layout_below="@+id/fotoProfile"
                 android:layout_marginLeft="13dp"
                 android:background="@drawable/frame_blue_profile"
                 android:orientation="vertical">
