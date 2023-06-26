@@ -7,12 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.SnapHelper
 import com.example.project_massive_vacalam.*
 
 class FragmentJelajahi1 : Fragment() {
@@ -20,6 +16,7 @@ class FragmentJelajahi1 : Fragment() {
     private lateinit var recyclerViewJ1: FrameLayout
     private lateinit var wisataList: ArrayList<Wisata>
     private lateinit var wisataAdapter: DetailedWisataAdapter
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,9 +44,8 @@ class FragmentJelajahi1 : Fragment() {
             intent.putExtra("wisata", it)
             startActivity(intent)
         }
-
-        return Unit
     }
+
 
     private fun createRecyclerView(layoutManager: RecyclerView.LayoutManager): RecyclerView {
         val recyclerView = RecyclerView(requireContext())
@@ -57,6 +53,5 @@ class FragmentJelajahi1 : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
         return recyclerView
     }
-
 
 }

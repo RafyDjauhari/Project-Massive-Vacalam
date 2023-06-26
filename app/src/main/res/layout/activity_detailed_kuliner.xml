@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Secondary1"
+    tools:context=".DetailedKuliner">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/Secondary1"
+        android:elevation="4dp"
+        android:title=""
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubiksemibold"
+                android:gravity="center"
+                android:text="Jelajahi"
+                android:textColor="@color/Secondary5"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambarKuliner"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/bukit_sakura" />
+
+            <TextView
+                android:id="@+id/namaKuliner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/rubikmedium"
+                android:text="nama makanan"
+                android:textColor="@color/Secondary5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deskKuliner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="@font/rubikregular"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="20dp"
+                android:text="Dinamakan Pantai Gigi Hiu sebab memiliki bebatuan karang yang bentuknya tajam layaknya gigi hiu. Selain itu, pantai ini pula disebut sebagai Pantai Batu Layar oleh masyarakat sekitar. Karena adanya batuan yang mengembang sehingga terbentuk seperti layar pada perahu. Pantai ini dipenuhi dengan batu-batu karang yang artistik menumpuk di sepanjang bibir pantai. Hal ini pula menjadi ciri khas dari pantai ini karena tidak ditemukan di pantai lainnya."
+                android:textColor="@color/Secondary5"
+                android:textSize="12sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

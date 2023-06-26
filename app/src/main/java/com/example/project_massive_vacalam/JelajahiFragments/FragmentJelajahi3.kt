@@ -37,7 +37,9 @@ class FragmentJelajahi3 : Fragment() {
         recyclerViewJ3.addView(recyclerView3)
 
         wisataList = DataSourceWisata().getItemDataList()
-        wisataAdapter = DetailedWisataAdapter(wisataList)
+        val filteredList = wisataList.filter { it.kategori == "Gunung" }
+
+        wisataAdapter = DetailedWisataAdapter(filteredList)
         recyclerView3.adapter = wisataAdapter
 
         wisataAdapter.onItemClick = {
@@ -45,16 +47,12 @@ class FragmentJelajahi3 : Fragment() {
             intent.putExtra("wisata", it)
             startActivity(intent)
         }
-
-        return Unit
     }
 
     private fun createRecyclerView(layoutManager: RecyclerView.LayoutManager): RecyclerView {
         val recyclerView = RecyclerView(requireContext())
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
-        val snapHelper : SnapHelper = LinearSnapHelper()
-        snapHelper.attachToRecyclerView(recyclerView)
         return recyclerView
     }
 

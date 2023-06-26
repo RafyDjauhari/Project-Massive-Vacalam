@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 class DetailedWisataAdapter(private val wisataList: List<Wisata>) : RecyclerView.Adapter<DetailedWisataAdapter.WisataViewHolder>() {
 
     var onItemClick : ((Wisata) -> Unit)? = null
+    private var filteredList: List<Wisata> = wisataList
 
     class WisataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val gambarWisataIv : ImageView = itemView.findViewById(R.id.gambarWisata)
@@ -34,6 +35,6 @@ class DetailedWisataAdapter(private val wisataList: List<Wisata>) : RecyclerView
     }
 
     override fun getItemCount(): Int {
-        return wisataList.size
+        return filteredList.size
     }
 }

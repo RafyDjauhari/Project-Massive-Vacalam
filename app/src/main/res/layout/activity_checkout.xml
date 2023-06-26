@@ -30,7 +30,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/rubiksemibold"
                 android:gravity="center"
-                android:text="Check Out"
+                android:text="Checkout"
                 android:textColor="@color/Secondary5"
                 android:textSize="32sp" />
 
@@ -183,7 +183,7 @@
     <LinearLayout
         android:id="@+id/btn_checkout"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/frameTunai"
         android:layout_marginHorizontal="115dp"
         android:layout_marginVertical="100dp"

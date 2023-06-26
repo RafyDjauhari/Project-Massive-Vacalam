@@ -39,24 +39,22 @@ class FragmentTrending2 : Fragment() {
         recyclerViewT2.addView(recyclerView2)
 
         trendingList = DataSourceTrending().getItemDataList()
-        trendingAdapter = DetailedWisataAdapter(trendingList)
+        val filteredList = trendingList.filter { it.kategori == "Minggu lalu" }
+
+        trendingAdapter = DetailedWisataAdapter(filteredList)
         recyclerView2.adapter = trendingAdapter
 
         trendingAdapter.onItemClick = {
-            val intent = Intent(requireContext(), DetailedTrending::class.java)
+            val intent = Intent(requireContext(), DetailedWisata::class.java)
             intent.putExtra("wisata", it)
             startActivity(intent)
         }
-
-        return Unit
     }
 
     private fun createRecyclerView(layoutManager: RecyclerView.LayoutManager): RecyclerView {
         val recyclerView = RecyclerView(requireContext())
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
-        val snapHelper : SnapHelper = LinearSnapHelper()
-        snapHelper.attachToRecyclerView(recyclerView)
         return recyclerView
     }
 

@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/rubikmedium"
-                android:text="Campus Game"
+                android:text="Rafy Djauhari"
                 android:textColor="@color/Primary"
                 android:textSize="20sp" />
 
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/rubikregular"
-                android:text="campusgame@gmail.com"
+                android:text="rafydjauhari01@gmail.com"
                 android:textColor="@color/Secondary4"
                 android:textSize="16sp" />
 
